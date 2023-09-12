@@ -4,6 +4,7 @@
 terraform {
 
   cloud {
+    organization = "TF_CLOUD_ORGANIZATION"
     workspaces {
       name = "learn-terraform-eks"
     }
