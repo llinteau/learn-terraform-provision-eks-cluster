@@ -6,7 +6,7 @@ terraform {
   cloud {
     organization = "Lysettes_New_Terraform_Org"
     workspaces {
-      name = "learn-terraform-eks"
+      name = "learn-terraform-provision-eks-cluster"
     }
   }
 
