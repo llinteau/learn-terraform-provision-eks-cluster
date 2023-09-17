@@ -92,7 +92,7 @@ module "eks" {
 
 # https://aws.amazon.com/blogs/containers/amazon-ebs-csi-driver-is-now-generally-available-in-amazon-eks-add-ons/ 
 data "aws_iam_policy" "ebs_csi_policy" {
-  arn = "arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy"
+  arn = "arn:aws:kms:us-east-2:746776318030:key/mrk-c48c192661de4b36a27d49a362071bcc"
 }
 
 module "irsa-ebs-csi" {
