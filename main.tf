@@ -14,8 +14,12 @@ data "aws_availability_zones" "available" {
   }
 }
 
-locals {
+/**locals {
   cluster_name = "education-eks-${random_string.suffix.result}"
+}**/
+
+locals {
+  cluster_name = "lysettes-education-eks-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
